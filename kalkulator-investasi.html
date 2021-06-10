@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kalkulator Investasi - Nabung</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/nabung.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Tentang</a></li>
+          <li class="dropdown"><a class="active" href="index.html#product"><span>Produk</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="profil-resiko.html">Profil Resiko Investasi</a></li>
+              <li><a class="active" href="kalkulator-investasi.html">Kalkulator Investasi</a></li>
+              <li><a href="target-investasi.html">Kalkulator Target Investasi</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#features">Fitur</a></li>
+          <li><a class="getstarted scrollto" href="profil-resiko.html">Mulai</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Produk</a></li>
+          <li>Kalkulator Investasi</li>
+        </ol>
+        <h2>Kalkulator Investasi</h2>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#dana-investasi" role="tab">
+              <h4>Dana Anda Saat Ini</h4>
+            </a>
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#investasi-berkala" role="tab">
+              <h4>Investasi Berkala</h4>
+            </a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="dana-investasi" role="tabpanel"
+            aria-labelledby="dana-investasi-tab">
+            <div class="card shadow">
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group row mb-3">
+                      <label for="dana-investasi-tab1" class="col-4 col-form-label text-end">Dana Investasi</label>
+                      <div class="col-7">
+                        <input type="text" class="form-control form-control-lg" id="dana-investasi-tab1"
+                          autocomplete="off" placeholder="0">
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">Rupiah</label>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="jangka-waktu-tab1" class="col-4 col-form-label text-end">Jangka Waktu</label>
+                      <div class="col-7">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <input type="number" class="form-control form-control-lg" id="jangka-waktu-tab1"
+                              autocomplete="off" placeholder="0">
+                          </div>
+                          <div class="col-lg-12 mt-2">
+                            <input type="range" class="form-range" id="range-tahun-tab1" min="0" max="30" step="1"
+                              value="0">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">Tahun </label>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="profil-resiko-tab1" class="col-4 col-form-label text-end">Profil Resiko</label>
+                      <div class="col-7">
+                        <select class="form-select form-select-lg mb-3" id="profil-resiko-tab1"
+                          aria-label=".form-select-lg example">
+                          <option value="0" selected disabled>- Profil resiko -</option>
+                          <option value="1">Sangat Konservatif</option>
+                          <option value="2">Konservatif</option>
+                          <option value="3">Moderat</option>
+                          <option value="4">Agresif</option>
+                        </select>
+                        <div id="" class="form-text">Ingin tahu profil resiko kamu? Cek <a href="">disini</a></div>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="return-pertahun-tab1" class="col-4 col-form-label text-end">Estimasi return per
+                        tahun</label>
+                      <div class="col-7">
+                        <input type="number" class="form-control form-control-lg" id="return-pertahun-tab1"
+                          autocomplete="off" placeholder="0">
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">%</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 offset-lg-1">
+
+                    <div class="form-group row mb-3">
+                      <label for="inflasi-tab1" class="col-4 col-form-label text-end">Tingkat Inflasi (% per
+                        tahun)</label>
+                      <div class="col-7">
+                        <input type="number" min="0" max="100" class="form-control form-control-lg" id="inflasi-tab1"
+                          autocomplete="off" placeholder="0">
+                        <div id="" class="form-text">Kisaran rata-rata inflasi di Indonesia adalah 3 - 5%</div>
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">%</label>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row mt-5">
+                      <div class="col-lg">
+                        <h4>Target Hasil Investasi</h4>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg">
+                        <h1 id="hasil-investasi-tab1" class="text-dongker">Rp. 0</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="investasi-berkala" role="tabpanel" aria-labelledby="investasi-berkala-tab">
+            <div class="card shadow">
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group row mb-3">
+                      <label for="dana-investasi-tab2" class="col-4 col-form-label text-end">Dana Investasi per bulan</label>
+                      <div class="col-7">
+                        <input type="text" class="form-control form-control-lg" id="dana-investasi-tab2"
+                          autocomplete="off" placeholder="0">
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">Rupiah</label>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="jangka-waktu-tab2" class="col-4 col-form-label text-end">Jangka Waktu</label>
+                      <div class="col-7">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <input type="number" class="form-control form-control-lg" id="jangka-waktu-tab2"
+                              autocomplete="off" placeholder="0">
+                          </div>
+                          <div class="col-lg-12 mt-2">
+                            <input type="range" class="form-range" id="range-tahun-tab2" min="0" max="240" step="1"
+                              value="0">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">Bulan </label>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="profil-resiko-tab2" class="col-4 col-form-label text-end">Profil Resiko</label>
+                      <div class="col-7">
+                        <select class="form-select form-select-lg mb-3" id="profil-resiko-tab2"
+                          aria-label=".form-select-lg example">
+                          <option value="0" selected disabled>- Profil resiko -</option>
+                          <option value="1">Sangat Konservatif</option>
+                          <option value="2">Konservatif</option>
+                          <option value="3">Moderat</option>
+                          <option value="4">Agresif</option>
+                        </select>
+                        <div id="" class="form-text">Ingin tahu profil resiko kamu? Cek <a href="">disini</a></div>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <label for="return-pertahun-tab2" class="col-4 col-form-label text-end">Estimasi return per
+                        tahun</label>
+                      <div class="col-7">
+                        <input type="number" class="form-control form-control-lg" id="return-pertahun-tab2"
+                          autocomplete="off" placeholder="0">
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">%</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 offset-lg-1">
+                    <div class="form-group row mb-3">
+                      <label for="inflasi-tab2" class="col-4 col-form-label text-end">Tingkat Inflasi (% per
+                        tahun)</label>
+                      <div class="col-7">
+                        <input type="number" min="0" max="100" class="form-control form-control-lg" id="inflasi-tab2"
+                          autocomplete="off" placeholder="0">
+                        <div id="" class="form-text">Kisaran rata-rata inflasi di Indonesia adalah 3 - 5%</div>
+                      </div>
+                      <div class="col-1 col-form-label">
+                        <label for="">%</label>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row mt-5">
+                      <div class="col-lg">
+                        <h4>Target Hasil Investasi</h4>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg">
+                        <h1 id="hasil-investasi-tab2" class="text-dongker">Rp. 0</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+        </div> -->
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/nabung.png" alt="">
+            </a>
+            <p>Nabung merupakan suatu platform yang dapat kamu gunakan untuk menjadi awal perjalanan investasi kamu</p>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Tautan</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">Tentang kami</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#product">Produk</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#features">Fitur</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Produk kami</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="profil-resiko.html">Profil Resiko Investasi</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="kalkulator-investasi.html">Kalkulator Investasi</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="target-investasi.html">Kalkulator Target Berkala</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Hubungi Kami</h4>
+            <p>
+              Jl. HS.Ronggo Waluyo, Puseurjaya, Kec. Telukjambe Timur, Kabupaten Karawang, Jawa Barat <br>
+              <strong>Telpon:</strong> (0267) 641177<br>
+              <strong>Email:</strong> info@unsika.ac.id<br>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>NABUNG</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Created by <a href="">Tim N/A Sistem Pakar</a>  |  Developed with <i class="ri-heart-fill text-danger"></i> by <a href="https://www.instagram.com/adamukti/">Adam Mukti
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/kalkulator-investasi.js"></script> -->
+  <!-- <script src="a.js"></script> -->
+  <script>
+    $('.nav-tabs a').click(function () {
+      $(this).tab('show');
+    })
+  </script>
+
+
+</body>
+
+</html>
