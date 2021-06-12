@@ -38,31 +38,36 @@ waktuTab3.addEventListener('change', function () {
 })
 
 kalkulatorTargetInvestasi.addEventListener('change', function () {
-    // let danaInvestasiTab3 = 0;
-    // let inflasiTab3 = 0;
-    // let bulan = waktuTab3.value;
-    // let returnPerBulan = returnPertahunTab3.value / 12;
-    // let inflasiPerBulan = tingkatInflasiTab3.value / 12;
-    // let hasilInvestasi = 0;
+    let targetInvestasiTab3 = clearFormat(targetInvestasi.value);
+    let danaInvestasi = 0;
+    let bunga = 1 + (returnPertahunTab3.value / 100);
+    bunga -= tingkatInflasiTab3.value / 100;
+    bunga = Math.pow(bunga, waktuTab3.value);
+    // console.log(bunga);
 
-    // console.log(returnPerBulan);
-    // console.log(bulan);
+    danaInvestasi = targetInvestasiTab3 / bunga;
+    investasiSaatIni.innerHTML = "Rp. " + formatRupiah(Math.round(danaInvestasi).toString(), "Rp. ");
 
-    // console.clear()
-    // console.log("Inflasi perbulan   = " + inflasiPerBulan);
-    for (let i = 0; i < 10; i++) {
+    let returnPerbulan = returnPertahunTab3.value / 12;
+    let inflasiPerbulan = tingkatInflasiTab3.value / 12;
+    let bulan = waktuTab3.value * 12;
+    let danaInvestasiPerbulan = 0;
 
-    }
+    let bungaPerbulan = 1 + (returnPerbulan / 100);
+    bungaPerbulan = Math.pow(bungaPerbulan, bulan);
+    console.clear();
+    console.log('return perbulan ' + returnPerbulan);
+    console.log('inflasi  ' + inflasiPerbulan);
+    console.log('bunga  ' + bungaPerbulan);
+    danaInvestasiPerbulan = targetInvestasiTab3 / bungaPerbulan;
+    // investasiPerbulan.innerHTML = "Rp. " + formatRupiah(Math.round(danaInvestasiPerbulan).toString(), "Rp. ");
 
-    // hasilInvestasiTab3.innerHTML = "Rp. " + formatRupiah(Math.round(hasilInvestasi).toString(), "Rp. ");
+
 })
 
 targetInvestasi.addEventListener("keyup", function (e) {
     targetInvestasi.value = formatRupiah(this.value, "Rp. ");
 });
-
-
-
 
 
 function clearFormat(angka) {
